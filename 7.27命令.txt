@@ -1,0 +1,50 @@
+    1  git config - -global user.name Eightarthurt
+    2  git config - -global Eightarthur
+    3  git config --global Eightarthurt
+    4  git config --globaluser.name "Eightarthurt"
+    5  git config --global usear.name "Eightarthurt"
+    6  git config --global user.name"Eightarthurt"
+    7  git config --global user.email"1059197108@qq.com"
+    8  echo "# Eightarthurt.github.io" >> README.md
+    9  git init
+   10  git add README.md
+   11  git commit -m "first commit"
+   12  git remote add origin https://github.com/Eightarthurt/Eightarthurt.github.io.git
+   13  git push -u origin master
+   14  echo "# Eightarthurt.github.io" >> README.md
+   15  git init
+   16  git add README.md
+   17  git commit -m "first commit"
+   18  git remote add origin https://github.com/Eightarthurt/Eightarthurt.github.io.git
+   19  git push -u origin master
+   20  git config --global user.name "Eightarthurt"
+   21  git config --global user.email "1059197108@qq.com"
+   22  echo "# Eightarthurt.github.io" >> README.md
+   23  git init
+   24  git add README.md
+   25  git commit -m "first commit"
+   26  git remote add origin https://github.com/Eightarthurt/Eightarthurt.github.io.git
+   27  git push -u origin master
+   28  git pull origin master
+   29  git pull origin master
+   30  git status
+   31  git add .
+   32  git status
+   33  git commit -m "有一句纳兰词“
+   34  git commit -m "有一句纳兰词"
+   35  git status
+   36  git push -u origin master
+   37  touch index.html
+   38  git add .
+   39  git commit -m
+   40  git commit -m "我的名字"
+   41  git status
+   42  git origin master
+   43  git push -u origin master
+   44  git add .
+   45  git commit -m "anhther"
+   46  git push -u origin master
+   47  git add .
+   48  git commit -m "有一条"
+   49  git push -u origin master
+   50  history > 7.27命令.txt
