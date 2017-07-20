@@ -1,474 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
 
-<!doctype html>
-<html>
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-        
-<meta charset="utf-8">
-<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://dixonandmoe.com/">
-<title>Dixon & Moe — Strategy, Design, Development and Marketing</title>
-<meta name="title" content="Dixon & Moe — Strategy, Design, Development and Marketing">
-<meta name="description" content="We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.">
-<meta itemprop="url" content="https://dixonandmoe.com/">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<meta property="og:site_name" content="Dixon & Moe">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dixonandmoe.com/">
-<meta property="og:title" content="Dixon & Moe — Strategy, Design, Development and Marketing">
-<meta property="og:description" content="We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.">
-  <meta property="og:image" content="https://dixonandmoe.com/assets/images/dixon-and-moe-hero.jpg">
-
-<meta name="twitter:site" content="@dixonandmoe">
-<meta name="twitter:domain" content="dixonandmoe.com">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://dixonandmoe.com/">
-<meta name="twitter:title" content="Dixon & Moe — Strategy, Design, Development and Marketing">
-<meta name="twitter:description" content="We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.">
-  <meta name="twitter:image" content="https://dixonandmoe.com/assets/images/dixon-and-moe-hero.jpg">
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-
-    <script src="//use.typekit.net/byb6vzw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-
-    <link href="/assets/stylesheets/all-6c8afd58.css" rel="stylesheet" type="text/css" />
-
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-64800746-1', 'auto');
-      ga('require', 'linkid', 'linkid.js');
-      ga('send', 'pageview');
-    </script>
-
-    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="favicon.ico">
-    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
-
-    <link rel="icon" sizes="192x192" href="/assets/images/icons/touch-icon-192x192-7a41b867.png">
-
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/icons/apple-touch-icon-180x180-precomposed-0f943ebb.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152-precomposed-70400aef.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/icons/apple-touch-icon-144x144-precomposed-daeb2442.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/icons/apple-touch-icon-120x120-precomposed-9f509193.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/icons/apple-touch-icon-114x114-precomposed-fc53cd41.png">
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/icons/apple-touch-icon-76x76-precomposed-d16529d6.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/icons/apple-touch-icon-72x72-precomposed-f64d1425.png">
-<link rel="apple-touch-icon-precomposed" href="/assets/images/icons/apple-touch-icon-precomposed-73d1ea2f.png">
-
-    <script type="application/ld+json">
-  { "@context" : "https://schema.org",
-    "@type" : "Organization",
-    "url" : "https://dixonandmoe.com/",
-    "name" : "Dixon & Moe",
-    "logo" : "https://dixonandmoe.com/assets/images/dixon-and-moe-logo.png",
-    "image" : "https://dixonandmoe.com/assets/images/dixon-and-moe-hero.jpg",
-    "foundingDate" : "2010",
-    "founder" : [
-      { "@type" : "Person",
-        "name" : "Alexander Dixon"
-      },
-      { "@type" : "Person",
-        "name" : "Moe Amaya"
-      } ],
-    "address" : [
-      { "@type" : "PostalAddress",
-        "streetAddress" : "165 11th St",
-        "addressLocality" : "San Francisco",
-        "addressRegion" : "CA",
-        "postalCode" : "94103",
-        "addressCountry" : "USA"
-      } ],
-    "hasMap" : "https://goo.gl/maps/Z9MBDPtQhQP2",
-    "geo" : [
-      { "@type" : "GeoCoordinates",
-        "latitude" : "37.773705",
-        "longitude" : "-122.416119"
-      } ],
-    "contactPoint" : [
-      { "@type" : "ContactPoint",
-        "url" : "https://dixonandmoe.com/",
-        "email" : "hello@dixonandmoe.com",
-        "contactType" : "customer service"
-      } ]
-  }
-</script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-
-  <body class="index" itemscope itemtype="https://schema.org/WebPage">
-
-    <!-- <div style="position:fixed;top:0;right:0;left:0;bottom:0;width:100%;height:100%;border:12px solid #0F0D20;"></div> -->
-
-    <div class="layout-modal js-layout-modal"></div>
-
-    <div class="layout-overlay js-layout-overlay"></div>
-
-    <header class="layout-header js-layout-header">
-
-	<nav class="nav-visible" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-
-		<ul class="nav-visible__list">
-			<li class="nav-visible__list-item nav-visible__list-item--lg">
-<a class="nav-visible__logo js-nav-visible__logo active" itemprop="url" href="/">					<span itemprop="name">Dixon & Moe</span>
-</a>			</li>
-			<li class="nav-visible__list-item nav-visible__list-item--md">
-<a class="nav-visible__link" itemprop="url" href="/contact/">					<span itemprop="name">Contact</span>
-</a>			</li>
-			<!-- <li class="nav-visible__list-item nav-visible__list-item--md">
-<a class="nav-visible__link" itemprop="url" href="/work/">					<span itemprop="name">Work</span>
-</a>			</li> -->
-			<!-- <li class="nav-visible__list-item nav-visible__list-item--md">
-<a class="nav-visible__link" itemprop="url" href="/writing/">					<span itemprop="name">Writing</span>
-</a>			</li> -->
-			<li class="nav-visible__list-item nav-visible__list-item--sm">
-				<button class="nav-button__open js-nav-hidden-open" style="float:right">
-					<span class="nav-button__ampersand">&amp;</span>
-				</button>
-
-				<button class="nav-button__close js-nav-hidden-close">
-					<span class="nav-button__times">&times;</span>
-				</button>
-			</li>
-		</ul>
-	</nav>
-
-	<nav class="nav-hidden" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-		<ul class="nav-hidden__list">
-			<li class="nav-hidden__list-item">
-<a class="nav-hidden__link active" itemprop="url" href="/">					<span itemprop="name">Home</span>
-</a>			</li>
-			<!-- <li class="nav-hidden__list-item"> -->
-					<!-- <span itemprop="name">Work</span> -->
-			<!-- </li> -->
-			<!-- <li class="nav-hidden__list-item">
-<a class="nav-hidden__link" itemprop="url" href="/process/">					<span itemprop="name">Process</span>
-</a>			</li>
-			<li class="nav-hidden__list-item">
-<a class="nav-hidden__link" itemprop="url" href="/writing/">					<span itemprop="name">Writing</span>
-</a>			</li> -->
-			<li class="nav-hidden__list-item">
-<a class="nav-hidden__link" itemprop="url" href="/contact/">					<span itemprop="name">Contact</span>
-</a>			</li>
-		</ul>
-	</nav>
-</header>
-
-
-
-    <main class="layout-content js-layout-content" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement" role="main">
-      
-
-
-<header class="home-header">
-
-  <div class="home-header__shapes">
-    <div class="rellax" data-rellax-speed="-2">
-      <div class="home-header__shape"></div>
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
     </div>
-  </div>
 
-  <div class="home-header__ampersands">
-    <div class="rellax" data-rellax-speed="0">
-      <div class="js-parallax-scene">
-        <div class="layer" data-depth="0.75">
-          <figure class="home-header__ampersand">
-            <img class="home-header__ampersand--hatch" src="/assets/images/ampersand-hatch-9859d6ce.svg" />
-          </figure>
-        </div>
-        <div class="layer" data-depth="1.50">
-          <figure class="home-header__ampersand">
-            <img class="home-header__ampersand--solid" src="/assets/images/ampersand-solid-3e2a39b9.svg" />
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="home-header__text">
-      <div class="row">
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
-            <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
-            <a class="home-header__link" href="mailto:hello@dixonandmoe.com">get in touch</a>
-          </div>
-        </div>
-        <div class="rellax" data-rellax-speed="0">
-          <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
-            <a class="home-header__email" href="mailto:hello@dixonandmoe.com">hello@dixonandmoe.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="home-projects">
-  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
-      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">Monograph</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, product, marketing</span></h4>
-      <h2 class="home-project__title" itemprop="description">Monograph is a digital marketing platform for architects. <span class="home-project__title--light">We designed and built the entire product in-house which is currently in its beta phase and launching early 2017.</span></h2>
-      <a class="home-project__link" itemprop="url" target="_blank" href="http://monograph.io/">launch site</a>
-    </div>
-    <div class="home-project__assets col-xs-24 col-md-8">
-      <img class="home-project__image home-project__image--right" style="margin-left:0;" src="/assets/images/work/monograph-hero--right-3ecfbce1.png" />
-    </div>
-  </article>
-  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="home-project__assets col-xs-24 col-md-8">
-      <img class="home-project__image home-project__image--left" src="/assets/images/work/wisepops-hero--right-c3568d98.png" />
-    </div>
-    <div class="home-project__text col-xs-24 col-sm-21 col-md-15 col-md-offset-1">
-      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">WisePops</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, ui/ux, marketing</span></h4>
-      <h2 class="home-project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="home-project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
-      <a class="home-project__link" itemprop="url" target="_blank" href="http://wisepops.com/">launch site</a>
-    </div>
-  </article>
-  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
-      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">AgendaNYC</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">frontend, custom cms, seo</span></h4>
-      <h2 class="home-project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="home-project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
-      <a class="home-project__link" itemprop="url" target="_blank" href="http://www.agendanyc.com/">launch site</a>
-    </div>
-    <div class="home-project__assets col-xs-24 col-md-8 col-md-offset-1">
-      <img class="home-project__image home-project__image--right" src="/assets/images/work/agendanyc-hero--right-ce273cbf.png" />
-    </div>
-  </article>
-  <article class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="home-project__assets col-xs-24 col-md-8">
-      <img class="home-project__image home-project__image--left" src="/assets/images/work/groovehq-hero--left-1cf93ab2.png" />
-    </div>
-    <div class="home-project__text col-xs-24 col-sm-21 col-md-15 col-md-offset-1">
-      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">GrooveHQ</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, branding, marketing</span></h4>
-      <h2 class="home-project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="home-project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
-      <a class="home-project__link" itemprop="url" target="_blank" href="https://www.groovehq.com/">launch site</a>
-    </div>
-  </article>
-  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
-      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">Aptible</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, animation, frontend</span></h4>
-      <h2 class="home-project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="home-project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
-      <a class="home-project__link" itemprop="url" target="_blank" href="https://www.aptible.com/technology/">visit page</a>
-    </div>
-    <div class="home-project__assets col-xs-24 col-md-8 col-md-offset-1">
-      <img class="home-project__image home-project__image--right" src="/assets/images/work/aptible-hero--right-e6b2c4de.png" />
-    </div>
-  </article>
-</section>
-
-<section class="home-process show-md">
-  <div class="home-process__text">
-    <div class="row">
-      <div class="rellax" data-rellax-speed="2">
-        <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
-          <h2 class="page-section__description">We take a design focused approach to each project phase, from discovery through development to launch.</h2>
-        </div>
-      </div>
-      <div class="rellax" data-rellax-speed="0">
-        <div class="col-xs-24 col-sm-3 col-md-6 col-lg-9 show-sm">
-          <h4 class="home-process__tagline">Our Process</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="home-process__grid">
-    <div class="rellax" data-rellax-speed="0">
-      <div class="row">
-        <div class="col-xs-24">
-          <span class="home-process__grid-col grid-col-1-a"></span>
-          <span class="home-process__grid-col grid-col-1-b"></span>
-          <span class="home-process__grid-col grid-col-2-a"></span>
-          <span class="home-process__grid-col grid-col-2-b"></span>
-          <span class="home-process__grid-col grid-col-3-a"></span>
-          <span class="home-process__grid-col grid-col-3-b"></span>
-          <span class="home-process__grid-col grid-col-4-a"></span>
-          <span class="home-process__grid-col grid-col-4-b"></span>
-          <span class="home-process__grid-col grid-col-5-a"></span>
-          <span class="home-process__grid-col grid-col-5-b"></span>
-          <span class="home-process__grid-col grid-col-6-a"></span>
-          <span class="home-process__grid-col grid-col-6-b"></span>
-          <span class="home-process__grid-col grid-col-7-a"></span>
-          <span class="home-process__grid-col grid-col-7-b"></span>
-          <span class="home-process__grid-col grid-col-8-a"></span>
-          <span class="home-process__grid-col grid-col-8-b"></span>
-          <span class="home-process__grid-col grid-col-9-a"></span>
-          <span class="home-process__grid-col grid-col-9-b"></span>
-          <span class="home-process__grid-col grid-col-10-a"></span>
-          <span class="home-process__grid-col grid-col-10-b"></span>
-          <span class="home-process__grid-col grid-col-11-a"></span>
-          <span class="home-process__grid-col grid-col-11-b"></span>
-          <span class="home-process__grid-col grid-col-12-a"></span>
-          <span class="home-process__grid-col grid-col-12-b"></span>
-          <span class="home-process__grid-col grid-col-13-a"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="home-process__shapes">
-    <div class="rellax" data-rellax-speed="-2">
-      <ul class="js-parallax-scene">
-        <li class="home-process__shape layer" data-depth="0.33"><img class="home-process__shape-content" src="/assets/images/process/shape-content-lg-19a2d427.svg" /></li>
-        <li class="home-process__shape layer" data-depth="0.66"><img class="home-process__shape-discovery" src="/assets/images/process/shape-discovery-lg-67df76b8.svg" /></li>
-        <li class="home-process__shape layer" data-depth="1.00"><img class="home-process__shape-development" src="/assets/images/process/shape-development-lg-f8073833.svg" /></li>
-        <li class="home-process__shape layer" data-depth="1.33"><img class="home-process__shape-design" src="/assets/images/process/shape-design-lg-d67e7834.svg" /></li>
-        <li class="home-process__shape layer" data-depth="1.66"><img class="home-process__shape-testing" src="/assets/images/process/shape-testing-lg-eddccc92.svg" /></li>
-        <li class="home-process__shape layer" data-depth="2.00"><img class="home-process__shape-start" src="/assets/images/process/shape-start-lg-0d503afc.svg" /></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">首页</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
       </ul>
-    </div>
-  </div>
-  <div class="home-process__phases">
-    <div class="rellax" data-rellax-speed="0">
-      <div class="row">
-        <div class="col-xs-4 col-xs-offset-2">
-          <h4 class="home-process__phase-title" style="margin-left:16px;">discovery</h4>
-          <h5 class="home-process__phase-percent">00%</h5>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
         </div>
-        <div class="col-xs-4">
-          <h4 class="home-process__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
-          <h5 class="home-process__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
-        </div>
-        <div class="col-xs-4 col-xs-offset-2">
-          <h4 class="home-process__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
-          <h5 class="home-process__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
-        </div>
-        <div class="col-xs-4">
-          <h4 class="home-process__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
-          <h5 class="home-process__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
-        </div>
-        <div class="col-xs-4">
-          <h4 class="home-process__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
-          <h5 class="home-process__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+   <h1><div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=a522d965c6cec3fd9f33af27b7e1bf5a/a1ec08fa513d269745de2cf450fbb2fb4316d80d.jpg" alt="...">
+    </a>
+  <div class="jumbotron">
+  <h1>The qzone of 刘旭!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+     <h1>
 
-<section class="home-writing">
-  <div class="home-writing__text">
-    <div class="row">
-      <div class="rellax" data-rellax-speed="0">
-        <div class="col-xs-24 col-sm-3 col-md-6 col-lg-9 show-sm">
-          <h4 class="home-writing__tagline">Our writing</h4>
-        </div>
-      </div>
-      <div class="rellax" data-rellax-speed="2">
-        <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
-          <h2 class="page-section__description">Sometimes we write about particular projects, building a design agency or just random stuff.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="home-writing__posts">
-    <article class="home-post" itemscope itemtype="https://schema.org/Article">
-      <div class="row">
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-6">
-            <div class="home-post__shape--right"></div>
-          </div>
-        </div>
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-6">
-            <img class="home-post__image" src="/assets/images/posts/agency-year-1-make-all-the-mistakes-2509327b.jpg" />
-          </div>
-        </div>
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-15">
-            <h2 class="home-post__title" itemprop="headline">Agency Year 1: Make All the Mistakes</h2>
-            <a class="home-post__link" href="/writing/agency-year-1-make-all-the-mistakes/">read it now</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="home-post" itemscope itemtype="https://schema.org/Article">
-      <div class="row">
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-6">
-            <div class="home-post__shape--left"></div>
-          </div>
-        </div>
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-6 col-md-offset-6">
-            <img class="home-post__image" src="/assets/images/posts/how-to-form-an-llc-in-california-9df68c60.jpg" />
-          </div>
-        </div>
-        <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-12">
-            <h2 class="home-post__title" itemprop="headline">How to Form an LLC in California</h2>
-            <a class="home-post__link" href="/writing/how-to-form-an-llc-in-california/">read it now</a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-
-  </div>
-</section>
-
-<section class="home-expertise">
-  <div class="home-expertise__text">
-    <div class="row">
-      <div class="rellax" data-rellax-speed="2">
-        <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
-          <h2 class="page-section__description">Interested in getting more visitors, converting more customers, or developing tailored software? Let's chat!</h2>
-          <a class="home-expertise__link" href="mailto:hello@dixonandmoe.com">message us</a>
-        </div>
-      </div>
-      <div class="rellax" data-rellax-speed="0">
-        <div class="col-sm-3 col-md-6 col-lg-9 show-sm">
-          <h4 class="home-expertise__tagline">Contact us</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </main>
-
-    <footer class="layout-footer js-layout-footer">
-
-	<div class="row">
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8">
-			<h5>&copy; 2010 – 2016&nbsp;&nbsp;&nbsp;<a href="https://dixonandmoe.com/">Dixon & Moe, LLC</a></h5>
-		</div>
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8 text-sm-center">
-			<a href="mailto:hello@dixonandmoe.com">hello@dixonandmoe.com</a>
-		</div>
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8 text-sm-right">
-			<a href="https://twitter.com/@dixonandmoe">Twitter</a> – <a href="https://medium.com/dixon-moe">Medium</a>
-		</div>
-
-
-
-
-	<!-- <section class="row">
-
-		<div class="col-md-7 credits">
-			<h5>Designed By</h5>
-			<h3><a href="http://dixonandmoe.com/">Dixon & Moe</a></h3>
-		</div>
-
-		<div class="col-md-6 contact">
-			<h5>Email us</h5>
-			<h4><a href="mailto:moe@dixonandmoe.com">moe@dixonandmoe.com</a></h4>
-		</div>
-
-		<div class="col-md-5 social">
-			<h5>Socialize</h5>
-			<h4><a href="https://twitter.com/dixonandmoe">Twitter</a></h4>
-		</div>
-
-		<div class="col-md-5 copyright">
-			<h5>&copy; 2015 Dixon &amp; Moe </h5>
-		</div>
-
-	</section> -->
-</footer>
-
-    <script src="/assets/javascripts/all-2c7d8371.js" type="text/javascript"></script>
-
-      <script>logoColor(840);</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
